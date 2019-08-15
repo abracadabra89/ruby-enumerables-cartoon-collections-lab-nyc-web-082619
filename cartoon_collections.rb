@@ -6,8 +6,11 @@ def roll_call_dwarves(array)# code an argument here
 end
 
 def summon_captain_planet(array)
-  array.split.map(&:capitalize).join('! ')
+  planeteer_calls.collect do |call|
+    call.capitalize << "!"
+  end
 end
+
 
 def long_planeteer_calls(array)
  array.select {|a| a >= 4} 
