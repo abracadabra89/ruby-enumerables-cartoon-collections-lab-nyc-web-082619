@@ -4,12 +4,15 @@ def roll_call_dwarves(array)# code an argument here
    puts index
 end
 
-def summon_captain_planet(array)# code an argument here
-  array.map(&:upcase + '!')
+def summon_captain_planet(array)
+  array.split.map(&:capitalize).join('! ')
 end
 
-def long_planeteer_calls# code an argument here
-  # Your code here
+def long_planeteer_calls(array)
+  if array.length >= 4
+    puts true
+  else
+    puts false 
 end
 
 def find_the_cheese# code an argument here
