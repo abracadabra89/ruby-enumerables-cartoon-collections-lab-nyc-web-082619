@@ -9,7 +9,7 @@ def summon_captain_planet(array)
 end
 
 def long_planeteer_calls(array)
-  if array.length >= 4
+ array.select {|a| a >= 4} 
     puts true
   else
     puts false 
